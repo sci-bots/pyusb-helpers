@@ -12,6 +12,9 @@ package:
   name: pyusb-helpers
   version: {{ GIT_VERSION }}
 
+build:
+  script: python setup.py install --single-version-externally-managed --record record.txt
+
 requirements:
   build:
     - conda-helpers
